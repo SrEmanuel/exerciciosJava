@@ -3,7 +3,7 @@
 </h1>
 
 ## 🤔  What is this repository?
-This is a place jere you can see a lot of exercises that i made in my learning path
+This is a place where you can see a lot of exercises that i made in my learning path
 
 ---
 Feito com muito ❤  por [Emanuel Martins](https://github.com/SrEmanuel)<br>
