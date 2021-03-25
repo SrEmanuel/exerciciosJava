@@ -1,7 +1,7 @@
 import java.util.Locale;
 import java.util.Scanner;
 
-public class exercise02 {
+public class Exercise02 {
     public static void main(String[] args) {
         /*
         Faça um programa para ler o valor do raio de um círculo, e depois mostrar o valor da área deste círculo com quatro
