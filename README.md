@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="JAVA" src=".github/java.svg" width="250px" />
+    <img alt="JAVA" src="./java.svg" width="150px" />
 </h1>
 
 ## 🤔  What is this repository?
