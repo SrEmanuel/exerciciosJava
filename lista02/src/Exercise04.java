@@ -14,9 +14,7 @@ public class Exercise04 {
 
         if(hi < hf){
             System.out.printf("Hora jogadas: %d",hf - hi);
-        } else{
-            System.out.printf("Horas jogadas: %d", (24 - hi) + hf);
-        }
+        } else{ System.out.printf("Horas jogadas: %d", (24 - hi) + hf); }
         sc.close();
 
     }
