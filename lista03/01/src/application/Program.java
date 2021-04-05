@@ -19,7 +19,7 @@ public class Program {
 
         Rectangle rectangle = new Rectangle();
 
-        System.out.println("Enter the width and height of thee rectangle: ");
+        System.out.println("Enter the width and height of the rectangle: ");
         rectangle.width = sc.nextDouble();
         rectangle.height = sc.nextDouble();
 
