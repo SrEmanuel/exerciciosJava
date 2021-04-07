@@ -17,5 +17,7 @@ public class Program {
         double qnt = sc.nextDouble();
 
         System.out.printf("Amount to be paind in reais: %.2f", CurrencyConverter.amountPaid(price, qnt));
+        
+        sc.close();
     }
 }
