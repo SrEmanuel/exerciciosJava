@@ -19,7 +19,7 @@ public class Program {
         System.out.println("UPDATED: "+ sdf.format(d));
 
         int minutes = cal.get(Calendar.MINUTE);
-        int month = 1 + cal.get(Calendar.MONTH); //I added one to this because the calendar month starts at zero, not one.
+        int month = 1 + cal.get(Calendar.MONTH); //I added one to this because the Calendar month starts at zero, not one.
 
 
         System.out.println("MINUTES: "+ minutes);
