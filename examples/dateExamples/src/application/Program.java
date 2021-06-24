@@ -15,7 +15,7 @@ public class Program {
 
         Date x1 = new Date(); //create a new date with current time
         Date x2 = new Date(System.currentTimeMillis());//Here i create a new date with current time converted from milli seconds
-        Date x3 = new Date(0);
+        Date x3 = new Date();
         Date x4 = new Date(1000L * 60 * 60* 5);
 
         Date y1 = sdf1.parse("25/06/2018");
