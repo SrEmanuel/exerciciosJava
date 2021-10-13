@@ -1,6 +1,6 @@
 package model.entities;
 
-import java.text.ParseException;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -10,8 +10,8 @@ public class Installment {
 
     SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
-    public Installment(String dueDate, Double value) throws ParseException {
-        this.dueDate = sdf.parse(dueDate);
+    public Installment(Date dueDate, Double value) {
+        this.dueDate = dueDate;
         this.value = value;
     }
 

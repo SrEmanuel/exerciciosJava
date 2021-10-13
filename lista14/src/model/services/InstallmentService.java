@@ -5,6 +5,7 @@ import model.entities.Installment;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 public class InstallmentService {
@@ -18,13 +19,20 @@ public class InstallmentService {
     }
 
     public void processInstallment(Contract contract, int number) throws ParseException {
-        //there's a big gambiarra ahead. proceed carefully
-
         Double installmentAmount = contract.getValue()/number;
-        Date auxMonth = contract.getAssingDate();
+
         for(int i=1; i<=number; i++){
-            auxMonth.setMonth(auxMonth.getMonth() + 1);
-            contract.addInstallment(new Installment(sdf.format(auxMonth), taxService.calculate(installmentAmount,i)));
+            Date date = addMonth(contract.getAssingDate(), i);
+            contract.addInstallment(new Installment(date, taxService.calculate(installmentAmount,i)));
         }
+    }
+
+    public Date addMonth(Date date, int n){
+        //solution by Nelio Alves
+
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(date);
+        cal.add(Calendar.MONTH, n);
+        return cal.getTime();
     }
 }
