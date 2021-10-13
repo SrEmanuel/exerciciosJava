@@ -22,6 +22,13 @@ public class Installment {
     public Double getValue() {
         return value;
     }
+
+    @Override
+    public String toString(){
+        return sdf.format(dueDate) + " - " + String.format("%.2f", value);
+    }
+
+
 }
 
 

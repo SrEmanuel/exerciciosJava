@@ -35,11 +35,9 @@ public class Program {
             InstallmentService installmentService = new InstallmentService(new PaypalService());
             installmentService.processInstallment(contract, numInstallments);
 
-            List<Installment> installmentsList = contract.getInstallments();
 
-            System.out.println("Installments: ");
-            for(Installment x : installmentsList){
-                System.out.println(sdf.format(x.getDueDate()) + " - " +  x.getValue());
+            for(Installment x : contract.getInstallments()){
+                System.out.println(x);
             }
 
         }
