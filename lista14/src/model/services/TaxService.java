@@ -4,5 +4,7 @@ import model.entities.Contract;
 
 public interface TaxService {
 
-    double calculate(Double amount, int month);
+    default double calculate(Double amount, int month){
+        return amount * month;
+    }
 }
